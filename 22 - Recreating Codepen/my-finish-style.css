@@ -1,0 +1,142 @@
+html {
+  box-sizing: border-box;
+  font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma,
+    Sans-Serif;
+  font-weight: normal;
+  color: #272727;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin:0;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.codepen{
+  display: grid;
+  grid-template-rows: auto 1fr 1fr auto;
+  height: 100vh;
+}
+
+.pen{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-flow: column;
+  grid-gap: 7px;
+  align-items: center;
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+
+.pen button.button{
+  background-color: #4e505a;
+  border-radius: 5px;
+  height: 50px;
+  color: white;
+  border: 0;
+  font-size: 1rem;
+  padding: 10px 16px;
+}
+
+.code{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-top: 5px solid #343436;
+  border-right: 5px solid #343436;
+  border-bottom: 15px solid #343436;
+}
+
+.editor{
+  display: grid;
+  grid-template-rows: auto minmax(100px, 1fr);
+  background-color: #1D1E22;
+  border-left: 15px solid #343436;
+}
+
+.editor__header{
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-content: center;
+  grid-gap: 5px;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.editor__code{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 5px;
+}
+
+.editor__gutter{
+  padding: 5px;
+  color: white;
+}
+.editor__gutter{
+  display:flex;
+  flex-direction: column;
+}
+
+.editor__code textarea{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  color: yellowgreen;
+  border: 0;
+  resize: none;
+}
+
+.editor__code textarea:focus{
+  outline: 0;
+}
+
+.code .button.button--small.editor__settings{
+  background-color: #4e505a;
+  color: white;
+  border: 0;
+  border-radius: 3px;
+}
+
+.preview iframe{
+  width: 100%;
+  height: 100%;
+}
+
+.settings{
+  background-color: #34363F;
+  padding: 10px;
+  border-top: 1px solid rgb(63,65,75);
+}
+
+.settings button{
+  background-color: #111;
+  border: 0;
+  color: white;
+  padding: 2px 7px;
+  border-radius: 3px;
+}
+
+.settings button:hover{
+  background-color: rgb(30, 30, 30);
+}
+
+
